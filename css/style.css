@@ -1,0 +1,134 @@
+:root {
+  --orange: #f38160;
+  --black: #403c39;
+  --gris: #949494;
+  --yellow: rgb(255, 217, 0);
+  --white: #fafafa;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-left: 150px;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+/* // Menu superior // */
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav li figure {
+  margin: 0;
+  padding: 0;
+}
+.nav li figure img {
+  width: 194px;
+  height: 54px;
+  padding: 33px 0px 33px 0px;
+}
+.nav > li:nth-child(2) ul {
+  margin: 0;
+  padding: 46px 10px 46px 10px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 646px;
+  height: auto;
+}
+.nav > li:nth-child(2) ul a {
+  text-decoration: none;
+  color: var(--gris);
+  position: relative;
+  display: inline-block;
+}
+.nav > li:nth-child(2) ul a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 10%;
+  background-color: var(--orange);
+}
+.nav > li:nth-child(2) ul a:hover {
+  color: var(--orange);
+}
+.nav > li:nth-child(2) ul a:hover::after {
+  width: 80%;
+}
+.nav > li:nth-child(3) {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 36px;
+  width: 35px;
+  height: 35px;
+}
+.nav > li:nth-child(3) > a {
+  position: absolute;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+.nav > li:nth-child(3) a:hover {
+  border: 2px solid var(--orange);
+  border-radius: 4px;
+  background-color: var(--yellow);
+}
+.nav > li:nth-child(4) {
+  list-style: none;
+  margin: 0;
+  padding: 25px 10px 46px 10px;
+  display: flex;
+  position: relative;
+  right: 150px;
+  justify-content: space-between;
+  list-style: none;
+  width: 300px;
+  height: 60px;
+}
+.nav > li:nth-child(4) ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  width: 150px;
+  height: 60px;
+}
+.nav > li:nth-child(4) ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 150px;
+  height: 60px;
+}
+.nav > li:nth-child(4) ul li:first-child a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+.nav > li:nth-child(4) ul li + li a {
+  width: 150px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #f38160;
+  color: var(--white);
+}
